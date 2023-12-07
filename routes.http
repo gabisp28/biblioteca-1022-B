@@ -1,0 +1,31 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro 01",
+    "autor": "Autor 01",
+    "npaginas": 450
+}
+
+###
+
+GET http://localhost:3333/livro
+
+###
+
+GET http://localhost:3333/livro?search=IFMS
+
+###
+
+PUT http://localhost:3333/livro/73af9742-99c1-439e-b13c-5e9b6bbd93f5
+Content-Type: application/json
+
+{
+    "titulo": "Livro IFMS",
+    "autor": "Autora: Gabi",
+    "npaginas": 450
+}
+
+###
+
+DELETE http://localhost:3333/livro/b69de0e1-59ca-4a33-b7d1-9fc1f7afebc6
